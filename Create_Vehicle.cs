@@ -33,18 +33,16 @@ namespace Vehicle_Management_System
             }
         }
 
-        private void closeBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        private void closeBtn_Click(object sender, EventArgs e) { }
 
         private void viewAll_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1(vehicles);
-            form1.Size = new Size(930, 555);
-            form1.FormBorderStyle = FormBorderStyle.None;
-            form1.BackColor = Color.White;
-            form1.Show();
+            new Manage_Form().Show();
+        }
+
+        private void closeBtn_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

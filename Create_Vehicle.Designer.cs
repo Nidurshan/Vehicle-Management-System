@@ -164,7 +164,7 @@
             // btnSubmit
             // 
             btnSubmit.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSubmit.Location = new Point(405, 460);
+            btnSubmit.Location = new Point(302, 446);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(108, 39);
             btnSubmit.TabIndex = 16;
@@ -181,9 +181,11 @@
             closeBtn.SizeMode = PictureBoxSizeMode.StretchImage;
             closeBtn.TabIndex = 17;
             closeBtn.TabStop = false;
+            closeBtn.Click += closeBtn_Click_1;
             // 
             // IEDate
             // 
+            IEDate.Format = DateTimePickerFormat.Short;
             IEDate.Location = new Point(480, 295);
             IEDate.Name = "IEDate";
             IEDate.Size = new Size(214, 23);
@@ -191,6 +193,7 @@
             // 
             // LEDate
             // 
+            LEDate.Format = DateTimePickerFormat.Short;
             LEDate.Location = new Point(480, 339);
             LEDate.Name = "LEDate";
             LEDate.Size = new Size(214, 23);
@@ -198,6 +201,7 @@
             // 
             // EEDate
             // 
+            EEDate.Format = DateTimePickerFormat.Short;
             EEDate.Location = new Point(480, 383);
             EEDate.Name = "EEDate";
             EEDate.Size = new Size(214, 23);
@@ -206,7 +210,7 @@
             // viewAll
             // 
             viewAll.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            viewAll.Location = new Point(611, 460);
+            viewAll.Location = new Point(508, 446);
             viewAll.Name = "viewAll";
             viewAll.Size = new Size(108, 39);
             viewAll.TabIndex = 21;
@@ -239,7 +243,6 @@
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Create_Vehicle_Form";
-            Text = "Create Vehicle";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)closeBtn).EndInit();
             ResumeLayout(false);
