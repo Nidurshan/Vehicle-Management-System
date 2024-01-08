@@ -1,0 +1,15 @@
+Vehicle Management System
+==========================
+
+Lorries
+--------
+
+Model, Insurance expiry date, Color, Number, License Expiry Date, 
+Emission test Expiry, Vehicle Size = small or medium or big
+
+1. Create a class named Vehicle and set all properties = Completed.
+2. Create a form, customize and get all inputs and set them to all properties = Completed. 
+3. Create a list of vehicles and push all peoperties to the list = Completed.
+4. Loop the list and create vehicles in the form.
+5. create a button named Created Vehicles. That button should shows the Created veicles and details.
+
